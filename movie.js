@@ -5,7 +5,6 @@ const inputBox = document.querySelector(".inputBox");
 // Function to fetch movie details using OMDB Api
 const getMovieInfo = async (movie) => {
   try {
-    // const myAPIKey = '2d69c94e'; //2d69c94d
     const url = `http://www.omdbapi.com/?&apikey=myAPIKey&t=${movie}`;
 
     const response = await fetch(url);
